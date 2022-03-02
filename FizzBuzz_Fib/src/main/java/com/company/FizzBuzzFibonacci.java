@@ -31,21 +31,20 @@ public class FizzBuzzFibonacci {
         }
 
 
-//        //Fibonacci
-//        System.out.println("\n" + "Fibonacci" + "\n" + "========");
-//
-//        int[] fib = new int[userInput2];
-//
-//        fib[0] = 0; //0th number in fib series is 0
-//            System.out.println(fib[0]);
-//        fib[1] = 1; // 1st number in fib series is 1
-//            System.out.println(fib[1]);
-//
-//        for (int i = 2; i <= fib.length; i++) {
-//                i = fib[i-2] + fib[i-1]; /* fibonacci = add two previous numbers together
-//                                             [two away from i] + [one away from i] */
-//                System.out.println(i);
-//            }
+        //Fibonacci
+        System.out.println("\n" + "Fibonacci" + "\n" + "========");
+
+        int num1 = 0;
+        int num2 = 1;
+
+        for (int i = 1; i <= userInput2; ++i) {
+            System.out.println(num1);
+            int num3 = num1 + num2;
+   //         i = fib[i-2] + fib[i-1]; /* fibonacci = add two previous numbers together
+                                        //  [two away from i] + [one away from i] */
+            num1 = num2;
+            num2 = num3;
+            }
         
         }
     }
